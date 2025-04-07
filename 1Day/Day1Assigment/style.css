@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+}
+
+body{
+    width: 88%;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    margin-top: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    li{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: small;
+    }
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar ul button{
+    background-color: #72bf44;
+    height: 40px;
+    width: 100px;
+    border: none;
+}
+
+.navbar .active , .navbar a:hover{
+    color: #72bf44;
+    border-bottom: 1px solid #72bf44;
+}
+
+.home-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-section .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-section .content .year{
+    color: #72bf44;
+    border: 1px solid #222222;
+    border-radius: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.home-section .content h1{
+    font-size: 60px;
+    font-weight: 520;
+}
+span{
+    color: #72bf44;
+}
+
+.home-section .content .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.home-section .content .buttons button{
+    background-color: #72bf44;
+    height: 40px;
+    width: 100px;
+    border: none;
+}
+
+.home-section .image{
+    flex: 1;
+}
+.home-section .image img{
+    width: 100%;
+}
+
+.mobilemenu{
+    display: none;
+}
+.menubutton {
+    display: none;
+}
+
+@media (max-width: 1010px){
+    .navbar ul{
+        display: none;
+    }
+    .menubutton{
+        display: flex;
+        button{
+            background-color: #72bf44;
+            height: 40px;
+            width: 100px;
+            border: none;   
+        }
+    }
+    .mobilemenu{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+    .show{
+        display: flex !important;
+    }
+    .mobilemenu li a:hover{
+        color: #72bf44;
+        border-bottom: 1px solid #72bf44;
+    }
+    .mobilemenu li button{
+        background-color: #72bf44;
+        height: 40px;
+        width: 100px;
+        border: none;
+    }
+    .home-section{
+        flex-direction: column;
+    }
+}

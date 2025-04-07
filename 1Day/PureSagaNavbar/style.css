@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /* to delete the text style of li*/
+    list-style: none;  /* to delete the text style of li*/
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body{
+    background: #f9f9f9;
+}
+
+.container{
+    max-width: 88%;
+    margin: auto; /* to make it in between the align with the width*/
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar img{
+    width: 100px;
+}
+.navbar a{
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 13px;
+    letter-spacing: 1px;  /***   ***/
+}
+.navbar .active, .navbar a:hover
+{
+    color: #72BF44;
+    border-bottom: 1px solid #72BF44;
+}
+
+
+button{
+    padding: 15px 30px;
+    background-color: #72BF44;
+    color: #f9f9f9;
+    border: none;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 60px;
+    color: #222222;
+}
+.content span{
+    color: #72BF44;
+}
+.image{
+    flex: 1;  /* every item flex 1, every get same size*/
+}
+.image img{
+    width: 100%;
+}
+
+.outlined-text{
+    border: 1px solid #222222;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #222222;
+    border-radius: 40px;
+    text-wrap: nowrap;
+}
+#mobilemenu{
+    display: none;
+}
+#menubtn{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){ 
+    #mobilemenu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .show{
+        display: flex !important; 
+    }
+    .navbar ul{
+        display: none;
+    }
+    #menubtn{
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+    }
+ } 
