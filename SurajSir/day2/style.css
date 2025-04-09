@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 30px;
+}
+
+.links ul{
+    display: none;
+}
+
+.links li:hover ul{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 10px;
+}
