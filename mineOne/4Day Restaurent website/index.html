@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NavBar -->
+      <div class="navbar row">
+        <div class="image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="163" height="38" viewBox="0 0 163 38"><g id="Logo" transform="translate(-260 -51)"><g id="Logo-2" data-name="Logo" transform="translate(260 51)"><g id="Elements"><path id="Path_1429" data-name="Path 1429" d="M315.086,140.507H275.222v-.894c0-11.325,8.941-20.538,19.933-20.538s19.931,9.213,19.931,20.538Z" transform="translate(-270.155 -115.396)" fill="#f29f05"></path><path id="Path_1430" data-name="Path 1430" d="M301.13,133.517a1.488,1.488,0,0,1-1.394-.994,11.361,11.361,0,0,0-10.583-7.54,1.528,1.528,0,0,1,0-3.055,14.353,14.353,0,0,1,13.37,9.527,1.541,1.541,0,0,1-.875,1.966A1.444,1.444,0,0,1,301.13,133.517Z" transform="translate(-264.176 -113.935)" fill="#fff"></path><path id="Path_1431" data-name="Path 1431" d="M297.343,146.544a14.043,14.043,0,0,1-13.837-14.211h2.975a10.865,10.865,0,1,0,21.723,0h2.975A14.043,14.043,0,0,1,297.343,146.544Z" transform="translate(-266.247 -108.544)" fill="#363636"></path><path id="Path_1432" data-name="Path 1432" d="M302.183,132.519a7.064,7.064,0,1,1-14.122,0Z" transform="translate(-264.027 -108.446)" fill="#363636"></path><path id="Path_1433" data-name="Path 1433" d="M320.332,134.575H273.3a1.528,1.528,0,0,1,0-3.055h47.033a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-271.815 -108.923)" fill="#f29f05"></path><path id="Path_1434" data-name="Path 1434" d="M289.154,123.4a1.507,1.507,0,0,1-1.487-1.528v-3.678a1.488,1.488,0,1,1,2.975,0v3.678A1.508,1.508,0,0,1,289.154,123.4Z" transform="translate(-264.154 -116.667)" fill="#f29f05"></path><path id="Path_1435" data-name="Path 1435" d="M284.777,138.133H275.3a1.528,1.528,0,0,1,0-3.055h9.474a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-270.84 -107.068)" fill="#363636"></path><path id="Path_1436" data-name="Path 1436" d="M284.8,141.691h-6.5a1.528,1.528,0,0,1,0-3.055h6.5a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-269.379 -105.218)" fill="#363636"></path></g></g><text id="Quickeat" transform="translate(320 77)" fill="#363636" font-size="20" font-family="Poppins" font-weight="700"><tspan x="0" y="0">QUICK</tspan><tspan y="0" fill="#f29f05">EAT</tspan></text></g></svg>
+        </div>
+        <div class="sections">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Restaurants</a>
+            <a href="">Pages</a>
+            <a href="">Contacts</a>
+        </div>
+        <div class="buttons">
+            <button class="cart">
+                <i class="ri-shopping-bag-fill"></i>
+            </button>
+            <button class="secondary-button">ORDER NOW</button>
+        </div>
+      </div>
+    <!-- NavBar -->
+    
+    <!--Home-->
+      <div class="home row">
+        <div class="left column">
+            <h1>The Best Restaurants In Your Home</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="row">    <!---################# Important Part#######################-->
+                <div class="dropdown row">
+                    <ul class="drop column">
+                        Choose a Restaurant 4
+                        <li ><button onclick=dropdown()>Choose a Restaurant</button></li>
+                        <li ><button onclick=dropdown()>Choose a Restaurant 1</button> </li>
+                        <li ><button onclick=dropdown()>Choose a Restaurant 2</button> </li>
+                        <li ><button onclick=dropdown()>Choose a Restaurant 3</button> </li>
+                        <li ><button onclick=dropdown()>Choose a Restaurant 4</button> </li>
+                    </ul>
+                    <div>
+                        <button class="primary-button visible" onclick=dropdown()><i class="ri-arrow-down-s-line"></i></button>
+                        <button class="primary-button invisible" onclick=dropdown()><i class="ri-arrow-up-s-line"></i></button>
+                    </div>
+                    <button class="secondary-button">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="https://quickeat-react.vercel.app/assets/img/photo-1.png" alt="">
+                    <div class="location row">
+                        <i class="ri-map-pin-fill"></i>
+                        <div class="column">
+                            <h3>12 Restaurant</h3>
+                            <p>In Your city</p>
+                        </div>
+                    </div>  
+                    <div class="review ">
+                        <div class="image row">
+                            <img src="https://quickeat-react.vercel.app/assets/img/photo-2.jpg" alt="">
+                            <div class="column">
+                                <p>Restaurant of the month</p>
+                                <h3>The Wilmington</h3>
+                                <div class="row">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      </div>
+    <!--Home-->
+
+    <!-- Working-->
+      <div class="working column">
+        <h1>How It Works</h1>
+        <p>Magna sit amet purus gravida quis blandit turpis cursus. Venenatis tellus in
+            metus vulputate eu scelerisque felis.</p>
+        <div class="itmes row">
+            <div class="item column">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/Illustration-1.png" alt="">
+                </div>
+                <h2>01 Select Restaurant</h2>
+                <p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+            </div>
+            <div class="item column">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/Illustration-2.png" alt="">
+                </div>
+                <h2>01 Select Restaurant</h2>
+                <p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+            </div>
+            <div class="item column">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/illustration-3.png" alt="">
+                </div>
+                <h2>01 Select Restaurant</h2>
+                <p>Non enim praesent elementum facilisis leo vel fringilla. Lectus proin nibh nisl condimentum id. Quis varius quam quisque id diam vel.</p>
+            </div>
+        </div>    
+      </div>
+    <!-- Working-->
+
+    
+    <!--Reviews-->
+      <div class="reviews column">
+        <div class="row">
+            <div class="wrote column">
+                <h1>12 Best Restaurants in Your City</h1>
+                <p>Magna sit amet purus gravida quis blandit turpis cursus. Venenatis tellus in metus vulputate.</p>
+            </div>
+            <div class="review row">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/logos-2.jpg" alt="">
+                </div>
+                <div class="column">
+                    <h1>Kennington Lane Cafe</h1>
+                    <div class="row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="review row">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/logos-1.jpg" alt="">
+                </div>
+                <div class="column">
+                    <h1>The Wilmington</h1>
+                    <div class="row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="review row">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/logos-3.jpg" alt="">
+                </div>
+                <div class="column">
+                    <h1>Kings Arms</h1>
+                    <div class="row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button> 
+            <h6>SEE ALL</h6>
+            <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    <!--Reviews-->
+
+    <!-- Order -->
+     <div class="order row">
+        <div class="left column">
+            <div image>
+                <img src="" alt="">
+                    <div class="column foods">
+                        <div class="row Burger">
+                            <i class="fa-solid fa-burger"></i>
+                            <h4>Burgers</h4>
+                        </div>
+                        <div class="row meat">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                            <h4>Burgers</h4>
+                        </div>
+                        <div class="row pizza">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                            <h4>Burgers</h4>
+                        </div>
+                    </div>
+                </img>
+            </div>
+        </div>
+        <div class="right column">
+            <h1>Food from your favorite restaurants to your table</h1>
+            <p>Pretium lectus quam id leo in vitae turpis massa sed. Lorem donec massa sapien faucibus et molestie. Vitae elementum curabitur vitae nunc.</p>
+            <button class="secondary button">ORDER NOW</button>
+        </div>
+     </div>
+    <!-- Order -->
+
+    <!--About Services-->
+     <div class="services row">
+        <h1>Service shows good taste.</h1>
+        <div class="row">
+            <h1>976</h1>
+            <h5>Satisfied
+                Customer</h5>
+        </div>
+        <div class="row">
+            <h1>976</h1>
+            <h5>Best Restaurants</h5>
+        </div>
+        <div class="row">
+            <h1>1K+</h1>
+            <h5>Food Delivered</h5>
+        </div>
+     </div>
+    <!--About Services-->
+
+    <!--Costomers Reiviews-->
+     <div class="costomers row">
+        <div class="left column">
+            <h1>What customers say about us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit accusamus nisi laboriosam aut reiciendis? Eveniet saepe cumque optio eligendi! Lorem ipsum dolor sit amet.</p>
+            <div class="reivew row">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/photo-5.jpg" alt="">
+                </div>
+                <div class="column">    
+                    <h2>Thomas Adamson</h2>
+                    <div class="row">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <i class="ri-arrow-left-line"></i>
+                <i class="ri-arrow-right-line"></i>
+            </div>
+        </div>
+        <div class="right image">
+            <img src="https://quickeat-react.vercel.app/assets/img/photo-4.png" alt="">
+            <i class="fa-regular fa-thumbs-up"></i>
+            </img>
+        </div>
+     </div>
+    <!--Costomers Reiviews-->
+
+    <!-- JOin -->
+     <div class="join column">
+        <h1>Want to Join Partnership?</h1>
+        <div class="row">
+            <div class="image">
+                <img src="https://quickeat-react.vercel.app/assets/img/photo-6.jpg" alt="">
+                    <h1>Join Career</h1>
+                    <Button>
+                        Lear More 
+                        <i class="ri-arrow-right-line"></i>
+                    </Button>
+                </img>
+            </div>
+            <div class="image">
+                <img src="https://quickeat-react.vercel.app/assets/img/photo-7.jpg" alt="">
+                    <h1>Join Merchant</h1>
+                    <Button>
+                        Lear More 
+                        <i class="ri-arrow-right-line"></i>
+                    </Button>
+                </img>
+            </div>
+        </div>
+     </div>
+    <!-- JOin -->
+
+    <!--New and Events-->
+    <div class="events column">
+        <h1>Latest news and events</h1>
+        <div class="row">
+            <div class="left column">
+                <div class="image">
+                    <img src="https://quickeat-react.vercel.app/assets/img/photo-8.jpg" alt="">
+                    <button class="secondary button">news</button>
+                    <button class="secondary button">quickKeat</button>
+                    </img>
+                </div>
+                <h2>We Have Received An Award For The Quality Of Our Work</h2>
+                <p>Donec adipiscing tristique risus nec feugiat in fermentum. Sapien eget mi proin sed libero. Et magnis dis parturient montes nascetur. Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+                <button class="primay button">Read More <i class="ri-arrow-right-line"></i></button>
+                <div class="row">
+                    <i class="fa-solid fa-child"></i>
+                    <h4>by Quickeat</h4>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h4>01.Jan2022</h4>
+                    <i class="ri-eye-line"></i>
+                    <h4>132</h4>
+                </div>
+            </div>
+            <div class="right column">
+                <div class="row">
+                    <div class="image">
+                        <img src="https://quickeat-react.vercel.app/assets/img/food-1.jpg" alt="">
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <button class="secondary-button"> restaurants</button>
+                            <button class="secondary-button"> cooking</button>
+                        </div>
+                        <h3>With Quickeat you can order food for the whole day</h3>
+                        <div class="row">
+                            <i class="fa-solid fa-child"></i>
+                            <h4>by Quickeat</h4>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <h4>01.Jan2022</h4>
+                            <i class="ri-eye-line"></i>
+                            <h4>132</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <img src="https://quickeat-react.vercel.app/assets/img/food-3.jpg" alt="">
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <button class="secondary-button"> restaurants</button>
+                            <button class="secondary-button"> cooking</button>
+                        </div>
+                        <h3>Why You Should Optimize Your Meny for Delivery</h3>
+                        <div class="row">
+                            <i class="fa-solid fa-child"></i>
+                            <h4>by Quickeat</h4>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <h4>01.Jan2022</h4>
+                            <i class="ri-eye-line"></i>
+                            <h4>132</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <img src="https://quickeat-react.vercel.app/assets/img/food-2.jpg" alt="">
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <button class="secondary-button"> restaurants</button>
+                            <button class="secondary-button"> cooking</button>
+                        </div>
+                        <h3>127+ Couriers On Our Team!</h3>
+                        <div class="row">
+                            <i class="fa-solid fa-child"></i>
+                            <h4>by Quickeat</h4>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <h4>01.Jan2022</h4>
+                            <i class="ri-eye-line"></i>
+                            <h4>132</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--New and Events-->
+
+    <!--Menu-->
+    <div class="menu row">
+        <div class="left image">
+            <img src="https://quickeat-react.vercel.app/assets/img/illustration-4.png" alt="">
+        </div>
+        <div class="right column">
+            <h1>                Get the menu of your favorite restaurants every day            </h1>
+            <div class="row">
+                <i class="ri-notification-4-fill"></i>  
+                <input type="text" placeholder="Enter Email address">
+                </input>
+                <button class="secondary-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+
+    <!--Footer-->
+        <div class="footer column">
+            <div class="row">
+                <div class="column">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="38" viewBox="0 0 163 38"><g id="Logo" transform="translate(-260 -51)"><g id="Logo-2" data-name="Logo" transform="translate(260 51)"><g id="Elements"><path id="Path_1429" data-name="Path 1429" d="M315.086,140.507H275.222v-.894c0-11.325,8.941-20.538,19.933-20.538s19.931,9.213,19.931,20.538Z" transform="translate(-270.155 -115.396)" fill="#f29f05"></path><path id="Path_1430" data-name="Path 1430" d="M301.13,133.517a1.488,1.488,0,0,1-1.394-.994,11.361,11.361,0,0,0-10.583-7.54,1.528,1.528,0,0,1,0-3.055,14.353,14.353,0,0,1,13.37,9.527,1.541,1.541,0,0,1-.875,1.966A1.444,1.444,0,0,1,301.13,133.517Z" transform="translate(-264.176 -113.935)" fill="#fff"></path><path id="Path_1431" data-name="Path 1431" d="M297.343,146.544a14.043,14.043,0,0,1-13.837-14.211h2.975a10.865,10.865,0,1,0,21.723,0h2.975A14.043,14.043,0,0,1,297.343,146.544Z" transform="translate(-266.247 -108.544)" fill="#363636"></path><path id="Path_1432" data-name="Path 1432" d="M302.183,132.519a7.064,7.064,0,1,1-14.122,0Z" transform="translate(-264.027 -108.446)" fill="#363636"></path><path id="Path_1433" data-name="Path 1433" d="M320.332,134.575H273.3a1.528,1.528,0,0,1,0-3.055h47.033a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-271.815 -108.923)" fill="#f29f05"></path><path id="Path_1434" data-name="Path 1434" d="M289.154,123.4a1.507,1.507,0,0,1-1.487-1.528v-3.678a1.488,1.488,0,1,1,2.975,0v3.678A1.508,1.508,0,0,1,289.154,123.4Z" transform="translate(-264.154 -116.667)" fill="#f29f05"></path><path id="Path_1435" data-name="Path 1435" d="M284.777,138.133H275.3a1.528,1.528,0,0,1,0-3.055h9.474a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-270.84 -107.068)" fill="#363636"></path><path id="Path_1436" data-name="Path 1436" d="M284.8,141.691h-6.5a1.528,1.528,0,0,1,0-3.055h6.5a1.528,1.528,0,0,1,0,3.055Z" transform="translate(-269.379 -105.218)" fill="#363636"></path></g></g><text id="Quickeat" transform="translate(320 77)" fill="#363636" font-size="20" font-family="Poppins" font-weight="700"><tspan x="0" y="0">QUICK</tspan><tspan y="0" fill="#f29f05">EAT</tspan></text></g></svg>
+                    <h1>The Best Restaurants in Your Home</h1>
+                    <p>Vitae congue mauris rhoncus aenean. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Tempus egestas sed sed risus pretium quam.</p>
+                </div>
+                <div class="column">
+                    <h2>Menu</h2>
+                    <button class="primay button">Home <i class="ri-arrow-right-line"></i></button>
+                    <button class="primay button">About Us <i class="ri-arrow-right-line"></i></button>
+                    <button class="primay button">Restaurants <i class="ri-arrow-right-line"></i></button>
+                    <button class="primay button">Contacts <i class="ri-arrow-right-line"></i></button>
+                </div>
+                <div class="column">
+                    <h2>CONTACTS</h2>
+                    <i class="ri-map-pin-2-fill"></i> 1717 Harrison St, San Francisco, CA 94103, United States <br> <hr>
+                    <i class="ri-messenger-line"></i> quickeat@mail.net
+                    <i class="ri-phone-fill"></i> +1 324 445 642 24
+                    <div class="row">
+                        <i class="ri-facebook-circle-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-twitter-fill"></i>
+                    </div> 
+                </div>
+            </div>
+            <div class="column">
+                <hr>
+                <div class="row">
+                    Copyright © 2023. QuickEat. All rights reserved.
+                    <div>
+                        <a href="https://quickeat-react.vercel.app/#">Privacy Policy</a>
+                        <a href="https://quickeat-react.vercel.app/#">Terms & Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Footer-->
+
+    <script src="type.js"></script>
+</body>
+
+
+</html>
