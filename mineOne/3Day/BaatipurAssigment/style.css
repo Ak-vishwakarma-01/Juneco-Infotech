@@ -9,6 +9,7 @@
 }
 .colorchange{
     color:#DCA240;
+    font-family: inherit; /* inherit takes the property of parent*/
 }
 
 .fullpage{
