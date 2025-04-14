@@ -1,12 +1,20 @@
-const menu1 = document.getElementById("login");
-menu1.addEventListener('click',()=>{
-    const cont = document.getElementsByClassName("container")[0];
-    cont.classList.toggle("active")
-})
+
+function login(){
+    const signup = document.getElementById("sign");
+    const login = document.getElementById("log");
+    login.style.left = 0
+    signup.style.left = '170%'
+}
 
 
-const menu2 = document.getElementById("signup");
-menu2.addEventListener('click',()=>{
-    const cont = document.getElementsByClassName("container")[0];
-    cont.classList.toggle("active")
-})
+
+
+
+function signup(){
+    const signup = document.getElementById("sign");
+    const login = document.getElementById("log");
+    login.style.left = '-150%'
+    signup.style.left = '170%';
+    signup.style.width = "50%"
+}
+

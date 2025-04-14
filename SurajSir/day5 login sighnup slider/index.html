@@ -3,59 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Signup Page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
         <div class="child">
-            <div class="left">
-                <div class="form-div" id="loginscreen">
-                    <form action="">
-                        <h3>Login</h3>
-                        <div>
-                            <input type="text" placeholder="email">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="password">
-                        </div>
-                        <button>Submit</button>
-                        <p>Create a Account, <a onclick="displayRegister()">Register</a></p>
-                    </form>
+            <form action="" class="form" id="login">
+                <h1>Login</h1>
+                <div>
+                    <input type="text" placeholder="email">
                 </div>
-                <div class="form-div" id="registerscreen">
-                    <form action="">
-                        <h3>Register</h3>
-                        <div>
-                            <input type="text" placeholder="email">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="password">
-                        </div>
-                        <button>Submit</button>
-                        <p>Already a customer, <a onclick="displayLogin()">Login</a></p>
-                    </form>
+                <div>
+                    <input type="password" placeholder="password">
                 </div>
-            </div>
-            <!-- <div class="right">
-                <img src="https://dummyimage.com/400x500" alt="">
-            </div> -->
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+              
+                <p>Create an account, <a onclick="displayRegisterForm()">Register</a></p>
+            </form>
+            <form action="" class="form" id="register">
+                <h1>Register</h1>
+                <div>
+                    <input type="text" placeholder="email">
+                </div>
+                <div>
+                    <input type="password" placeholder="password">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+              
+                <p>Already have a account, <a onclick="displayLoginForm()">Login</a></p>
+            </form>
         </div>
     </div>
 
-
     <script>
-        const loginscreen = document.getElementById("loginscreen");
-        const registerscreen = document.getElementById("registerscreen");
+        const loginForm = document.getElementById('login');
+        const registerForm = document.getElementById('register');
 
-        function displayLogin() {
-            registerscreen.style.right = "100%";
-            loginscreen.style.left = 0;
+        function displayLoginForm() {
+                loginForm.style.left = '0px';
+                registerForm.style.left = '100%';
+        }
+        function displayRegisterForm() {
+                loginForm.style.left = '-100%';
+                registerForm.style.left = '0px';
         }
 
-        function displayRegister() {
-            
-        }
     </script>
 </body>
 </html>

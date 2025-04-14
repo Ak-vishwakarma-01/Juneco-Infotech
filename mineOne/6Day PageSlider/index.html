@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login row">
-            <h1>Welcome back</h1>
-            <h5>please enter your details</h5>
-            <input type="email" placeholder="emial">
-            <input type="password" placeholder="password">
-            <div>If you have no account register here <button id="signup">register</button></div>
-        </div>
-        <div class="signup row">
-            <h1>Sign Up Here</h1>
-            <h5>please enter your details</h5>
-            <input type="test" placeholder="name">
-            <input type="email" placeholder="email">
-            <input type="password" placeholder="password">
-            <div>If you have already register <button id="login"> login here</button></div>
+    <div class="main">
+        <div class="child">
+            <form class="login row" id="log">
+                <h1>Welcome back</h1>
+                <h5>please enter your details</h5>
+                <input type="email" placeholder="emial">
+                <input type="password" placeholder="password">
+                <div>If you have no account register here <button type="button" onclick=signup()>register</button></div>
+            </from>
+            <from class="signup row" id="sign">
+                <h1>Sign Up Here</h1>
+                <h5>please enter your details</h5>
+                <input type="test" placeholder="name">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <div>If you have already register <button type="button" onclick=login()> login here</button></div>
+            </from>
         </div>
     </div>
 </body>
