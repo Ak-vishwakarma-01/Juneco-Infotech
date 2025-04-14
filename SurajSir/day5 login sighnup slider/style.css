@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.child .left, .child .right{
+    flex: 1;
+}
+
+.child .right img{
+    width: 100%;
+}
+
+.left{
+    background-color: darkblue;
+ position: relative;
+}
+
+.left .form-div{
+    position: absolute;
+}

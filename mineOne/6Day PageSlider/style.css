@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+body{
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: aqua;
+    position: relative;
+   
+}
+.active{
+    flex-direction: row-reverse;
+}
+
+h1{
+    background-color: transparent;
+    color: rgb(250, 3, 3);
+}
+h5{
+    color: rgb(198, 12, 43);
+    background-color: transparent;
+}
+
+button{
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+}
+
+.row{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    div{
+        color: rgb(42, 73, 249);
+        background-color: transparent;
+    }
+}
+
+.signup{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20250205/pngtree-a-serene-view-of-terraced-fields-at-sunset-with-people-enjoying-image_16900758.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+
+}
+
+.login{
+    background-color: transparent;
+    position: absolute; 
+    right: 0;
+}
