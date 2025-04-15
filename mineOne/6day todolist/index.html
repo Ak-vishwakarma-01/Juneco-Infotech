@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main  -->
+     <div class="main">
+        <div class="child">
+            <div class="left">
+                <h1>MY TODO APP</h1>
+                <form id="todoForm">
+                    <div>
+                        <input type="text" placeholder="Task Title" class="input" id="title" required>
+                    </div>
+                    <div>
+                        <textarea name="" placeholder="Task Description" id="desc" required></textarea>
+                    </div>
+                    <button>Add Todo</button>
+
+                </form>
+            </div>
+            <div class="right">
+                <h3>Todos</h3>
+                <div class="btns">
+                    <button class="btn" id="all" onclick=allList()>All</button>
+                    <button class="btn" id="pending" onclick=pending()>Pending</button>
+                    <button class="btn" id="completed" onclick=completed()>Completed</button>
+                </div>
+                <div class="todos" id="todos">
+                    
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- main  -->
+
+    <script src="type.js"></script>
+</body>
+</html>
