@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <div class="topleft balls">
+                <div>
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                </div>
+            </div>
+            <div class="topright balls">
+                <div>
+                    <div class="green"></div>
+                    <div class="pink"></div>
+                </div>
+            </div>
+            <div class="bottomleft balls">
+                <div>
+                    <div class="red"></div>
+                    <div class="blue"></div>
+                </div>
+            </div>
+            <div class="bottmright balls">
+                <div>
+                    <div class="pink"></div>
+                    <div class="red"></div>
+                </div>
+            </div>
+            <div class="maincontent">
+                <div class="upper">
+                    <h3 class="white"><span class="white day">Today's</span> Tasks <span class="taskcount gray white">5</span></h3>
+                    <div class="weeks white">
+                        <div class="days">
+                            <div class="white"><button onclick=m1() class="white"><h5 class="gray white">M</h5></button onclick=></div>
+                            <div class="white"><button onclick=tu2() class="white"><h5 class="gray white">T</h5></button onclick=></div>
+                            <div class="white"><button onclick=w3() class="white"><h5 class="gray white">W</h5></button onclick=></div>
+                            <div class="white"><button onclick=th4() class="white"><h5 class="gray white">T</h5></button onclick=></div>
+                            <div class="white"><button onclick=f5() class="white"><h5 class="gray white">F</h5></button onclick=></div>
+                            <div class="white"><button onclick=sa6() class="white"><h5 class="gray white">S</h5></button onclick=></div>
+                            <div class="white"><button onclick=su7() class="white"><h5 class="gray white">S</h5></button onclick=></div>
+                        </div>
+                        <div class="dates">
+                            <div class="white"><button onclick=m1()  class="white"><h5 class="white">1</h5></button onclick=></div>
+                            <div class="white"><button onclick=tu2()  class="white"><h5 class="white">2</h5></button onclick=></div>
+                            <div class="white"><button onclick=w3()  class="white"><h5 class="white">3</h5></button onclick=></div>
+                            <div class="white"><button onclick=th4()  class="white"><h5 class="white">4</h5></button onclick=></div>
+                            <div class="white"><button onclick=f5()  class="white"><h5 class="white">5</h5></button onclick=></div>
+                            <div class="white"><button onclick=sa6() class="white"><h5 class="white">6</h5></button onclick=></div>
+                            <div class="white"><button onclick=su7() class="white"><h5 class="white">7</h5></button></div>
+                        </div>
+                        <div class="types">
+                            <button onclick=allTask() class="white gray type-button all" id="all"><div class="buttonbox red"></div> All </button>
+                            <button onclick=workTask() class="white gray type-button work" id="work"> <div class="buttonbox green"></div> Work </button>
+                            <button onclick=sportTask() class="white gray type-button sport" id="sport"><div class="buttonbox blue"></div> Sport </button>
+                            <button onclick=personalTask() class="white gray type-button personal" id="personal"><div class="buttonbox pink"></div> Personal </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower cards" id="cards">
+                    <div class="card">
+                        <div class="time gray"> 08:30</div>
+                        <div>
+                            <h3>Title</h3>
+                            <h6 class="gray">description</h6>
+                        </div>
+                        <button onclick=hogaClick()></button>
+                    </div>
+                </div>
+                <button  class="addbutton" onclick=openAddForm()>+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskAdd" id="closethis">
+        <div class="taskcontainer">
+            <button class="addbutton" onclick=closeButton()>close</button>
+            <div>
+            <label for="tasktype"> Task Type:</label>
+            <select id="tasktype">
+                <option value="work">work</option>
+                <option value="sport">sport</option>
+                <option value="personal">personal</option>
+            </select>
+            </div>
+            <div>
+                <label for="appt">Select a Time:</label>
+                <input type="time" id="appt" name="appt">
+            </div>
+            <div>
+                <label for="apday">Select a Day:</label>
+                <select id="apday">
+                    <option value="M">Mon</option>
+                    <option value="Tu">Tue</option>
+                    <option value="W">Wed</option>
+                    <option value="Th">Thr</option>
+                    <option value="F">Fri</option>
+                    <option value="Sa">Sat</option>
+                    <option value="Su">Sun</option>
+                </select>
+            </div>
+    
+            <div><input type="text" placeholder="Title" id="title"></div>
+            <div><input type="text" placeholder="description" id="description"></div>
+
+            <button onclick=addOneTask() id="addOneTask">Add</button>
+
+        </div>
+    </div>
+
+</body>
+<script src="index.js"> </script>
+</html>

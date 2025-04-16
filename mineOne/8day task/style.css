@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #F6F6F6;
+}
+.main{
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.child{
+    background-color: inherit;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    background-color:#EE0808 ;
+}
+.blue{
+    background-color: #0964F0 ;
+    
+}
+
+.pink{
+    background-color: #EB08F0;
+}
+
+.green{
+    background-color:#11D624 ;
+}
+
+.balls{
+    /* position: absolute; */
+}
+
+.gray{
+    color: #909090 ;
+}
+
+.white{
+    background-color: #FFFFFF;
+}
+
+
+.topleft{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    div{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .blue{
+        top: 30px;
+        left: 30px;
+        padding: 7px;
+        width: 2px;
+        height: 2px;
+        border-radius: 12px;
+        box-shadow: #0964F0 1px 0px 5px 1px;
+    }
+    .green{
+        top: 20px;
+        left: 10px;
+        padding: 7px;
+        width: 2px;
+        margin: 30px;
+        height: 2px;
+        border-radius: 12px;
+        box-shadow: #11D624 1px 0px 5px 1px;
+    }    
+}
+
+.buttonbox{
+    height: 7px;
+    width: 7px;
+    border-radius: 2px;
+}
+
+.maincontent{
+    position: absolute;
+    top: 5vh;
+    height: 90vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFFFFF ;
+    padding: 30px 10px 5px 10px;
+    border-radius: 15px;
+    button{
+        border: none;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: transparent;
+        h3{
+            font-weight: bolder;
+            text-shadow: 0px 0px 2px ;  /* slidebottom, slideright , shadow  */
+        }
+        .weeks{
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction:column;
+            gap: 0px;
+        }
+        .dates, .days , .types{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: inherit;
+        }
+        .type-button{
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 400px;
+        overflow:auto;
+        background-color: #F6F6F6;
+        .card{
+            display: flex;
+            flex-direction: row;
+            border-left: 2px solid black;
+            align-items: center;
+            gap: 5px;
+            padding: 5px;
+            border-radius: 3px;
+            background-color: #FFFFFF;
+            margin: 2px 5px 2px 5px;
+            .time{
+                background-color: inherit;
+            }
+            h3, h6{
+                font-weight: 400;
+                background-color: #FFFFFF;
+                text-shadow: 0px 0px .5px ; 
+            }
+            button{
+                margin-left: 140px;
+                border-radius: 2px;
+                height: 10px;
+                width: 10px;
+                border: 1px solid balck;
+                color: white;
+            }
+        }
+    }
+    .addbutton{
+        background-color: red;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        margin-left: 250px;
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        text-shadow: 0px 0px 2px;
+    }
+}
+
+.taskAdd{
+    display: none;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    height: 100%;
+    width: 100vw;
+}
+
+.taskcontainer{
+    opacity:1;
+    background-color: aqua;
+    position: absolute;
+    top: 20vh;
+    left: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    input{
+        padding: 10px;
+    }
+    .addbutton{
+        border: none;
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+        margin-left: 147px;
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        text-shadow: 0px 0px 2px;
+    }
+}
