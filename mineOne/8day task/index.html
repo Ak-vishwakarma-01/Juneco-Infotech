@@ -38,22 +38,22 @@
                     <h3 class="white"><span class="white day">Today's</span> Tasks <span class="taskcount gray white">5</span></h3>
                     <div class="weeks white">
                         <div class="days">
-                            <div class="white"><button onclick=m1() class="white"><h5 class="gray white">M</h5></button onclick=></div>
-                            <div class="white"><button onclick=tu2() class="white"><h5 class="gray white">T</h5></button onclick=></div>
-                            <div class="white"><button onclick=w3() class="white"><h5 class="gray white">W</h5></button onclick=></div>
-                            <div class="white"><button onclick=th4() class="white"><h5 class="gray white">T</h5></button onclick=></div>
-                            <div class="white"><button onclick=f5() class="white"><h5 class="gray white">F</h5></button onclick=></div>
-                            <div class="white"><button onclick=sa6() class="white"><h5 class="gray white">S</h5></button onclick=></div>
-                            <div class="white"><button onclick=su7() class="white"><h5 class="gray white">S</h5></button onclick=></div>
+                            <div class="white"><button onclick=m1() id="m1" class="weekbutton white"><h5 class="gray white">M</h5></button ></div>
+                            <div class="white"><button onclick=tu2() id="tu2" class="weekbutton white"><h5 class="gray white">T</h5></button ></div>
+                            <div class="white"><button onclick=w3() id="w3" class="weekbutton white"><h5 class="gray white">W</h5></button ></div>
+                            <div class="white"><button onclick=th4() id="th4" class="weekbutton white"><h5 class="gray white">T</h5></button ></div>
+                            <div class="white"><button onclick=f5() id="f5" class="weekbutton white"><h5 class="gray white">F</h5></button ></div>
+                            <div class="white"><button onclick=sa6() id="sa6" class="weekbutton white"><h5 class="gray white">S</h5></button ></div>
+                            <div class="white"><button onclick=su7() id="su7" class="weekbutton white"><h5 class="gray white">S</h5></button ></div>
                         </div>
                         <div class="dates">
-                            <div class="white"><button onclick=m1()  class="white"><h5 class="white">1</h5></button onclick=></div>
-                            <div class="white"><button onclick=tu2()  class="white"><h5 class="white">2</h5></button onclick=></div>
-                            <div class="white"><button onclick=w3()  class="white"><h5 class="white">3</h5></button onclick=></div>
-                            <div class="white"><button onclick=th4()  class="white"><h5 class="white">4</h5></button onclick=></div>
-                            <div class="white"><button onclick=f5()  class="white"><h5 class="white">5</h5></button onclick=></div>
-                            <div class="white"><button onclick=sa6() class="white"><h5 class="white">6</h5></button onclick=></div>
-                            <div class="white"><button onclick=su7() class="white"><h5 class="white">7</h5></button></div>
+                            <div class="white"><button onclick=m1() id="m11" class="weekbutton white"><h5 class="white">1</h5></button ></div>
+                            <div class="white"><button onclick=tu2() id="tu21" class="weekbutton white"><h5 class="white">2</h5></button ></div>
+                            <div class="white"><button onclick=w3() id="w31" class="weekbutton white"><h5 class="white">3</h5></button ></div>
+                            <div class="white"><button onclick=th4() id="th41" class="weekbutton white"><h5 class="white">4</h5></button ></div>
+                            <div class="white"><button onclick=f5() id="f51" class="weekbutton white"><h5 class="white">5</h5></button ></div>
+                            <div class="white"><button onclick=sa6() id="sa61" class="weekbutton white"><h5 class="white">6</h5></button ></div>
+                            <div class="white"><button onclick=su7() id="su71" class="weekbutton white"><h5 class="white">7</h5></button></div>
                         </div>
                         <div class="types">
                             <button onclick=allTask() class="white gray type-button all" id="all"><div class="buttonbox red"></div> All </button>
@@ -64,13 +64,13 @@
                     </div>
                 </div>
                 <div class="lower cards" id="cards">
-                    <div class="card">
+                    <div class="card" style="text-decoration:line-through #909090;">
                         <div class="time gray"> 08:30</div>
                         <div>
                             <h3>Title</h3>
                             <h6 class="gray">description</h6>
                         </div>
-                        <button onclick=hogaClick()></button>
+                        <button onclick=hogaClick()><span>✓</span></button>
                     </div>
                 </div>
                 <button  class="addbutton" onclick=openAddForm()>+</button>
