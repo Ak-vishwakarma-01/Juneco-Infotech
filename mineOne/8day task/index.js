@@ -7,7 +7,6 @@ var typeOfTask = "all";
 const date = new Date().getDay();
 const customDays = ["Su", "M", "Tu", "W", "Th", "F", "Sa"];
 var day = customDays[date-1];
-alert(day);
 
 const color = {
     blue : '#0964F0',
@@ -188,6 +187,7 @@ function m1(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -203,6 +203,7 @@ function tu2(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -216,6 +217,7 @@ function w3(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -230,6 +232,7 @@ function th4(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -243,6 +246,7 @@ function f5(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -256,6 +260,7 @@ function sa6(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
@@ -269,6 +274,7 @@ function su7(){
             ele.style.color = "white";
         }else{
             ele.style.backgroundColor = "inherit"
+            ele.style.color = "black"
         }
     })
 
