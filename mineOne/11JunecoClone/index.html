@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juneco Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-blue-200">
+
+    <!-- FirstNav -->
+    <div class="fistnav text-sm flex justify-between bg-blue-400 p-3">
+        <div class="left">
+            <button>✉ info@juneco.in</button>
+            <button>📞 856007011</button>
+        </div>
+        <div class="right flex gap-3">
+            <button>Internship</button>
+            <button>Career</button>
+        </div>
+    </div>
+    <!-- FirstNav -->
+
+    <!-- Main -->
+    <div class="main text-sm font-light w-11/12 mx-auto bg-blue-200">
+        <!----SecondNav-->
+        <div class="secondnav flex justify-between pt-2">
+            <div class="logo">
+                <img src="https://juneco.in/static/images/logo.png" alt="Logo" width="100px" height="50px">
+            </div>
+            <div class="navlinks flex gap-12 items-center font-light p-2 rounded-full hover:shadow-xl hover:bg-blue-300 ">
+                <div>
+                    <a class="hover:text-red-600" href="">Home</a>
+                </div>
+                <div>
+                    <a class="hover:text-red-600" href="">About</a>
+                </div> 
+                <div class="dropdown">
+                    <a class="hover:text-red-600 cursor-pointer">Website ↓</a>
+                    <ul class="absolute hidden dropdown-menu transition-colors bg-blue-200 shadow-md w-60 rounded-md">
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Gorakhpur</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Allahabad</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Varanasi</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Lucknow</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Ayodhya</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Patna</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Delhi</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Deoria</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Azamgarh</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Website Designing Company in Kanpur</a></li>
+                    </ul>
+                </div>                   
+                
+                <div class="dropdown">
+                    <a class="hover:text-red-600 cursor-pointer" href="">Software ↓</a>
+                    <ul class="absolute hidden dropdown-menu transition-colors bg-blue-200 shadow-md w-60 rounded-md">
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Hotel Software</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Restaurant Software</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">School Software</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Ecommerce Software</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Custom Software Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="hover:text-red-600" href="">Graphic Design ↓</a>
+                    <ul class="absolute hidden dropdown-menu transition-colors bg-blue-200 shadow-md w-60 rounded-md">
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Logo Design</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Gorakhpur</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Allahabad</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Lucknow</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Varanasi</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Kanpur</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Delhi</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Ayodhya</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Patna</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Azamgarh</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Graphic Designing Company in Deoria</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="hover:text-red-600 cursor-pointer" href="">Digital Marketing ↓</a>
+                    <ul class="absolute hidden dropdown-menu transition-colors bg-blue-200 shadow-md w-60 rounded-md">
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Gorakhpur</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Deoria</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Azamgarh</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Patna</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Varanasi</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Allahabad</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Ayodhya</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Kanpur</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Lucknow</a></li>
+                        <li><a class="block px-4 py-2 hover:text-red-600" href="#">Digital Marketing Company in Delhi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="hover:text-red-600" href="">Works</a>
+                </div>
+                <div>
+                    <a class="hover:text-red-600" href="">Contact</a>
+                </div>
+                <Button class="bg-blue-500 h-10 p-2 rounded-full">Get Quote</Button>
+            </div>
+        </div>
+        <!----SecondNav-->
+
+        <!--Hero-->
+
+            <div class="hero flex justify-between pt-3">
+                <div class="left flex-1 flex flex-col gap-3 justify-center">
+                    <h6>5 YEARS + EXPERIENCE</h6>
+                    <h2 class="text-5xl font-normal text-purple-900 [clip-path:polygon(25%_0%,75%_0%,100%_50%,75%_100%,25%_100%,0%_50%)]"> <span class="text-black">We build</span> your online 
+                    <br>presence <span class="text-black">from scratch</span> </h2>
+                    <div ><p class="text-base">Online presence has become a necessity more than a luxury, thus if you want your business to be a leading one then it must get online for which you need a leading Digital Marketing Company that fulifill all your digital presence needs. </p></div>
+                    <div class="buttons flex gap-2">
+                        <button class="text-2xl font-thin rounded-sm p-1 text-center bg-blue-900 text-white">Know More</button>
+                        <button class="text-2xl font-thin rounded-sm p-1 text-center border border-gray-700 hover:text-white hover:bg-blue-900 ">Contact Us</button>
+                    </div>
+                    <div class="logos flex gap-2">
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-instagram-line"></i></a>
+                        </div>
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-facebook-circle-fill"></i></a>
+                        </div>
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-linkedin-box-fill"></i></a>
+                        </div>
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-youtube-fill"></i></a>
+                        </div>
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-message-2-line"></i></a>
+                        </div>
+                        <div class="w-10 h-10 border border-black rounded-full hover:shadow-lg hover:bg-gray-400 flex items-center justify-center">
+                          <a href="#"><i class="text-base ri-whatsapp-fill"></i></a>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="right flex-1">
+                    <div>
+                        <img src="https://juneco.in/static/images/hero-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        <!--Hero-->
+
+        <!--AboutUs-->
+        <div class="aboutus flex flex-col gap-2 my-10">
+            <h1 class="text-center text-3xl font-semibold text-blue-800 "> <span class="text-black">About</span> Us</h1>
+            <p>Juneco <span class="font-bold">Infotech</span> is the leading <span class="font-bold">Digital Marketing</span> agency in Gorakhpur started <span class="font-bold">5 years</span> back and have worked on tons of projects facilitating the growth of many businesses with our result driven strategies and implementation. </p>
+            <p> <span class="font-bold">Juneco Infotech</span>  covers you with all software and digital solutions such as Website Development, Software Development, Logo Creation, Banner Designing, Search Engine Optimization (SEO), Social Media Marketing and many more.</p>
+            <p>At Junecowe work towards driving results for our clients by offering only those services which actually align with their end objective.</p   >
+            <button class="text-2xl font-thin rounded-sm p-1 text-center bg-blue-900 text-white w-max hover:bg-blue-200  hover:text-black ">Know More</button>
+        </div>
+        <!--AboutUs-->
+
+        <!--Our Services-->
+        <div class="services flex gap-2 my-10">
+                <div class="flex flex-col justify-center gap-2 rounded-md p-2 flex-1">
+                    <div class="text-blue-800 text-5xl font-normal "> <span class="text-black">Our</span> <br> Services</div>
+                    <div class="text-lg font-normal">We are the leading digital marketing and web development company in Gorakhpur with a high success rate helping businesses to grow and in getting the desired result.</div>
+                </div>
+                <div class="text-center flex flex-col gap-2 bg-blue-100 rounded-md p-2 flex-1">
+                    <div class="bg-blue-200 rounded-md"><img class="" src="https://juneco.in/static/images/digital-marketing-2.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <div class="text-xl">Digital Marketing</div>
+                        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
+                        <div class="font-normal">Are your marketing strategies unable to bring leads to the business? Worry not, we are here to help you with personalised and best digital marketing strategies aimed towards achieving your desired goals.</div>
+                        <div class="flex gap-2 justify-center"> 
+                            <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                            <button class="p-3 rounded-md border border-gray-900">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center flex flex-col gap-2 bg-blue-100 rounded-md p-2 flex-1">
+                    <div class="bg-blue-200 rounded-md"><img class="" src="https://juneco.in/static/images/digital-marketing-2.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <div class="text-xl">Digital Marketing</div>
+                        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
+                        <div class="font-normal">Are your marketing strategies unable to bring leads to the business? Worry not, we are here to help you with personalised and best digital marketing strategies aimed towards achieving your desired goals.</div>
+                        <div class="flex gap-2 justify-center"> 
+                            <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                            <button class="p-3 rounded-md border border-gray-900">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center flex flex-col gap-2 bg-blue-100 rounded-md p-2 flex-1">
+                    <div class="bg-blue-200 rounded-md"><img class="" src="https://juneco.in/static/images/digital-marketing-2.png" alt=""></div>
+                    <div class="flex flex-col gap-2">
+                        <div class="text-xl">Digital Marketing</div>
+                        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
+                        <div class="font-normal">Are your marketing strategies unable to bring leads to the business? Worry not, we are here to help you with personalised and best digital marketing strategies aimed towards achieving your desired goals.</div>
+                        <div class="flex gap-2 justify-center"> 
+                            <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                            <button class="p-3 rounded-md border border-gray-900">View</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--Our Services-->
+
+        <!--Solution-->
+        <div class="solution flex flex-col justify-center gap-2 my-10 text-center">
+            <div><h1 class="text-5xl font-semibold">Software <span class="text-blue-800">Solution</span> </h1></div>
+            <div class="w-3/5 mx-auto "><p>Is your business lacking to operate at full potential and you feel a need for software to fill that gap? Worry not you got to the right place, Juneco Infotech offer the best software solutions specialised for your needs.</p></div>
+            <div class="flex felx-wrap gap-2 my-10">
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 w-34 bg-blue-100 rounded-md ">
+                    <div class="bg-blue-200 m-2 rounded-md"><img src="https://juneco.in/static/images/hotel-software.png" alt=""></div>
+                    <div>Hotel Software</div>
+                    <div class="flex gap-2 justify-center"> 
+                        <button class="p-3 rounded-md bg-blue-900 text-white">Get Quote</button>
+                        <button class="p-3 rounded-md border border-gray-900">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Solution-->
+
+    </div>
+    <!-- Main -->
+
+</body>
+</html>
