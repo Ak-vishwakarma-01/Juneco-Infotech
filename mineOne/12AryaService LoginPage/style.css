@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100dvh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child{
+
+
+    transform:
+      perspective(75em)
+      rotatex(15deg);
+    box-shadow:
+        rgba(22, 31, 39, 0.42) 0px 60px 123px -25px, 
+        rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color:
+      rgb(213, 220, 226)
+      rgb(213, 220, 226)
+      rgb(184, 194, 204);
+
+
+    width: 40vw;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.child h1{
+    font-size: 2rem;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.child div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.child .image{
+    width: 200px;
+}
+
+.child .image, .child button{
+    transform:
+    rotateX(20deg);
+    /* rotateZ(10deg); */
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #f8f8f8,
+    -1px 0 10px 0 rgba(34, 33, 81, 0.01),
+    10px 10px 10px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+
+  &:hover {
+    transform:
+      translate3d(5px, -5px, 0px)
+      rotateX(20deg);
+      /* rotateZ(10deg); */
+    box-shadow:
+      1px 1px 0 1px #f9f9fb,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+  }
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 20px;
+}   
+
+.passworddiv{
+    width: 100%;
+    position: relative;
+    button{
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        right: 20px;
+        top:-19px;
+        /* text-decoration: line-through; */
+    }
+}
+
+label{
+    color: rgb(159, 159, 159);
+}
+
+@media screen and (max-width: 768px) {
+    .child{
+        width: 90vw;
+    }
+    .child h1{
+        font-size: 1.5rem;
+    }
+    input{
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    button{
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}

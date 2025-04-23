@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <div class="image">
+                <img src="https://www.aryaservice.com/public/front_assets/images/logo.svg" alt="">
+            </div>
+            <form action="">
+                <div>
+                    <label for="#">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                </div>
+                <div>
+                    <label for="#">Password</label>
+                    <div class="passworddiv">
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                        <button type="button" id="openeye" style="background-color:transparent; color: black; display: none;"><i class="ri-eye-fill"></i></button>
+                        <button type="button" id="closeeye" style="background-color:transparent; color: black; "><i class="ri-eye-off-fill"></i></button>
+                    </div>
+                </div>
+                <p style="margin-top: 5px;"><a href="#">Forgot Password ?</a></p>
+                <button>SIGN IN</button>
+            </form>
+        </div>
+    </div>
+
+    <!--script-->
+    <script src="type.js"></script>
+    <!--script-->
+</body>
+</html>
