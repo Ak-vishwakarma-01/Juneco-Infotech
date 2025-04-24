@@ -11,14 +11,14 @@
     align-items: center;
     height: 100vh;
 }
-.left{  
+.left{      
     flex: 1;
     display: flex;
     flex-direction: column;
-    color: rgb(50, 50, 50);
+    color: rgb(47, 45, 45);
     gap: 20px;
     height: 100%;
-    box-shadow: 0px 0px 10px .2px black;
+    border: 1px solid black;
     div{
         display: flex;
         flex-direction: column;
@@ -42,13 +42,9 @@
     box-shadow: 0px 0px 10px .2px black;
 }
 .right{
-    flex: 6;
+    flex: 4;
     height: 100%;
-}
-
-.right div{
-    padding-left: 30px;
-    padding-right: 10px;
+    background-color: rgb(235, 235, 248);
 }
 
 .nav{
@@ -60,7 +56,9 @@
     box-shadow: 0px 0px 5px .2px black;
     div{
         display: flex;
-        align-items: center
+        align-items: center;
+        padding:0;
+        padding-right: 5px;
     };
     button{
         background-color: transparent;
@@ -73,13 +71,151 @@
         border:none;
         padding: 5px;
         border-radius: 3px;
-        background-color: antiquewhite;
+        background-color: inherit;
+        box-shadow: 0px 0px 2px 0px black inset;
     };
 }
 
-.content{
-    padding: 0;
+.padleft{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 0px;
+}
+
+.lead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+.lead div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     div{
-        padding: 0;
+        background-color: inherit;
+        padding:3px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px black inset;
+        a{
+            text-decoration: none;
+        }
+    }    
+}
+
+.lead button{
+    background-color: rgb(123, 235, 123);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(5, 83, 4) inset;
+}
+
+.date .button{
+    background-color: inherit;
+    border: none;
+    width: 70px;
+    text-align: center;
+    border: 1px solid blue;
+    border-bottom: solid blue;
+    border-radius: 2px ;
+    padding: 5px;
+    
+}
+
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    padding-left: 0;
+    div{
+        background-color: inherit;
+        padding:5px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px black inset;
+    }
+    input{ 
+        padding: 5px;
+    }
+    button{
+    background-color: inherit;
+    border: none;
+    width: 70px;
+    text-align: center;
+    border: 1px solid blue;
+    border-bottom: solid blue;
+    border-radius: 2px ;
+    padding: 5px;
+    }
+}
+
+.star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    div{
+        background-color: inherit;
+        padding:5px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 0px black inset;
+    }
+    .inner{
+        box-shadow: none;
+    }
+    button{
+        box-shadow: 0px 0px 2px 0px black inset;
+        background-color: inherit;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 20px;
+    gap: 5px;
+    box-shadow: 0px 0px 2px 0px black inset;
+    .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid rgb(162, 159, 159);
+    }
+    .check{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    color: rgb(80, 79, 79);
+    span{
+        color: black;
     }
 }
